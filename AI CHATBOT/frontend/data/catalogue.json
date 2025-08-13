@@ -1,0 +1,37 @@
+[
+  {
+    "title": "INSAT-3D IR1 Image",
+    "timestamp": "2024-07-01T00:00:00Z",
+    "sensor": "IR1",
+    "region": "Uttarakhand",
+    "download_url": "https://mosdac.gov.in/data/file1.tif"
+  },
+  {
+    "title": "INSAT-3D Water Vapor",
+    "timestamp": "2024-07-01T03:00:00Z",
+    "sensor": "WV",
+    "region": "Maharashtra",
+    "download_url": "https://mosdac.gov.in/data/file2.tif"
+  },
+  {
+    "title": "INSAT-3DR TIR1",
+    "timestamp": "2024-07-02T00:00:00Z",
+    "sensor": "TIR1",
+    "region": "Andhra Pradesh",
+    "download_url": "https://mosdac.gov.in/data/file3.tif"
+  },
+  {
+    "title": "INSAT-3D Visible Channel",
+    "timestamp": "2024-07-02T06:00:00Z",
+    "sensor": "VIS",
+    "region": "Karnataka",
+    "download_url": "https://mosdac.gov.in/data/file4.tif"
+  },
+  {
+    "title": "INSAT-3D WV Night Image",
+    "timestamp": "2024-07-03T21:00:00Z",
+    "sensor": "WV",
+    "region": "Delhi NCR",
+    "download_url": "https://mosdac.gov.in/data/file5.tif"
+  }
+]

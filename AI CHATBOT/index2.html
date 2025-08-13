@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SatBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header class="header">
+     <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1059px-Indian_Space_Research_Organisation_Logo.svg.png" alt="SatBot Logo"  style="opacity: 2;"/>
+        <span>SatBot</span>
+     </div>
+   
+    <nav>
+      <a href="#" style="color: #0066cc; font-size: 1.2em; font-weight: bold;">SignIn</a>
+      <a href="#" style="color: #ff8809; font-size: 1.2em; font-weight: bold;">SignUp</a>
+
+    </nav>
+  </header>
+   
+  <section class="hero">
+    <h2>Access Satellite Data</h2>
+    <p>Select a satellite below to view its data with AI assistance</p>
+  </section>
+
+   <section class="cards">
+    <div class="card">
+      <h3>INSAT</h3>
+      <p>Weather satellite data</p>
+      <a href="#">Access</a>
+    </div>
+    <div class="card">
+      <h3>SCATSAT</h3>
+      <p>Ocean wind observations</p>
+      <a href="https://mosdac.gov.in/gallery/index.html?ds=ocean">Access</a>
+    </div>
+    <div class="card">
+      <h3>Sentinel-2</h3>
+      <p>High-res optical imagery</p>
+      <a href="#">Access</a>
+    </div>
+    <div class="card">
+      <h3>CartoSAT</h3>
+      <p>Cartography & topography</p>
+      <a href="#">Access</a>
+    </div>
+  </section>
+
+  <!-- Large Chatbot UI Centered -->
+  <section class="chatbot-center">
+    <div class="chatbot-box">
+      <div class="chat-header">🤖 SatBot</div>
+      <div class="chat-body">
+        <div class="message bot">Hello! Ask me anything about satellite data.</div>
+        <div class="message user">Show me Sentinel-2 images for today.</div>
+        <div class="message bot">Loading Sentinel-2 data for your region...</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your question..."  />
+        <button>➤</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<script>
+  // Simple chatbot functionality
+  const chatInput = document.querySelector('.chat-input input');
+  const chatButton = document.querySelector('.chat-input button');
+  const chatBody = document.querySelector('.chat-body');
+
+  chatButton.addEventListener('click', () => {
+    const userMessage = chatInput.value.trim();
+    if (userMessage) {
+      chatBody.innerHTML += `<div class="msg user">${userMessage}</div>`;
+      chatInput.value = '';
+      // Simulate bot response
+      setTimeout(() => {
+        chatBody.innerHTML += `<div class="msg bot">Processing your request...</div>`;
+      }, 1000);
+    }
+  });

@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: gradient(to right, #004080, #0066cc)   !important;
+  background-image:URL("https://swarajya.gumlet.io/swarajya/2024-11-26/a7yyw2m3/ISRO-Representative-Image.png?w=1200&h=600&format=jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  color: gradient(to right, #004080, #0066cc);
+  background-image: 0.9;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: gradient(to right, #004080, #0066cc);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.header span {
+  color: rgb(83, 21, 54);
+    margin-left: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    align-items: center;
+
+}
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+.header nav a:hover {
+  color: #0066cc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f59106;
+}
+.hero p {
+  font-size: 1.1em;
+  color: #0066cc;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0 10% 50px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.card h3 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.card a:hover {
+  background-color: #004c99;
+}
+
+/* Chatbot Section */
+.chatbot-center {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbot-box {
+  width: 700px;
+  height: 500px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chat-header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  background: #f5f5f5;
+  overflow-y: auto;
+}
+.message {
+  margin-bottom: 15px;
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.bot {
+  background: #e0e0e0;
+  align-self: flex-start;
+}
+.user {
+  background: #cce5ff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+.chat-input input {
+  flex: 1;
+  padding: 15px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.chat-input button {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.chat-input input:enabled {
+  border: 2px solid #004080;
+}
+.chat-input button:enabled {
+  opacity: 1;
+  cursor: pointer;
+}
